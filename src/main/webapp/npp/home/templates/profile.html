@@ -1,0 +1,37 @@
+<input class="mdl-textfield__input" type="hidden" id="id" ng-model="user.id" ng-value="1"/>
+	
+<div class="card-container npp-card-wide mdl-card mdl-shadow--6dp">
+	<div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+		<h2 class="mdl-card__title-text">My Profile</h2>
+	</div>
+	<div class="mdl-card__supporting-text">
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield is-dirty mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text" id="name" ng-model="user.name"/>
+				<label class="mdl-textfield__label" for="name">Name</label>
+			</div>
+			<div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield is-dirty mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text" id="loginid" ng-model="user.loginId"/>
+				<label class="mdl-textfield__label" for="loginid">Loginid</label>
+			</div>
+			<div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield is-dirty mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="email" id="emailid" ng-model="user.email"/>
+				<label class="mdl-textfield__label" for="emailid">Email id</label>
+			</div>
+			<div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield is-dirty mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text" id="contact" ng-model="user.contact"/>
+				<label class="mdl-textfield__label" for="contact">Contact</label>
+			</div>
+			<div class="mdl-cell mdl-cell--12-col mdl-textfield is-dirty mdl-js-textfield">
+				<textarea class="mdl-textfield__input" type="text" rows= "3" id="address" ng-model="user.address"></textarea>
+				<label class="mdl-textfield__label" for="address">Address</label>
+			</div>
+		</div>
+	</div>
+	<div class="mdl-card__actions">
+		<button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="save()">Save</button>
+		<button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ui-sref="home">Cancel</button>
+	</div>
+</div>
+
+	

@@ -1,0 +1,186 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<context-param>
+		<param-name>UPLOADPATH</param-name>
+		<param-value>/home/hrishi/tomcat5.5/webapps/EPAPER/UPLOAD/</param-value>
+	</context-param>
+
+	<servlet id="Servlet_1">
+		<servlet-name>log4j-init</servlet-name>
+		<servlet-class>com.distapp.beans.Log4jInit</servlet-class>
+		<init-param>
+			<param-name>log4j-init-file</param-name>
+			<param-value>/WEB-INF/classes/log4j.properties</param-value>
+		</init-param>
+
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet id="Servlet_2">
+		<servlet-name>ActionServlet</servlet-name>
+		<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/struts-config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>content</param-name>
+			<param-value>text/html; charset=utf-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>locale</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<init-param>
+			<param-name>nocache</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet id="Servlet_7">
+		<servlet-name>Common_distAppServlet</servlet-name>
+		<servlet-class>com.distapp.beans.Common_distAppServlet</servlet-class>
+		<!-- <init-param> <param-name>dbURL</param-name> <param-value>jdbc:mysql://localhost:3306/OMKAR</param-value> 
+			</init-param> <init-param> <param-name>user</param-name> <param-value>app01admin</param-value> 
+			</init-param> <init-param> <param-name>password</param-name> <param-value>app01adminpwd</param-value> 
+			</init-param> To be Updated according to the database schema being used END 
+			<init-param> <param-name>driverClassName</param-name> <param-value>com.mysql.jdbc.Driver</param-value> 
+			</init-param> <init-param> <param-name>intialConnections</param-name> <param-value>15</param-value> 
+			</init-param> <init-param> <param-name>increment</param-name> <param-value>2</param-value> 
+			</init-param> -->
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet id="Servlet_3">
+		<servlet-name>securityChk_Servlet</servlet-name>
+		<servlet-class>com.distapp.beans.securityChk_Servlet</servlet-class>
+	</servlet>
+
+	<servlet id="Servlet_4">
+		<servlet-name>getPicklistDesc</servlet-name>
+		<servlet-class>com.distapp.beans.getPicklistDesc</servlet-class>
+	</servlet>
+	<servlet id="Servlet_5">
+		<servlet-name>getQueryResults</servlet-name>
+		<servlet-class>com.distapp.beans.getQueryResults</servlet-class>
+	</servlet>
+	<servlet id="Servlet_6">
+		<servlet-name>upload</servlet-name>
+		<servlet-class>com.distapp.beans.ePaperFileUpload</servlet-class>
+	</servlet>
+	<servlet id="Servlet_8">
+		<servlet-name>getDBDetails</servlet-name>
+		<servlet-class>com.distapp.beans.getDBDetails</servlet-class>
+	</servlet>
+	<servlet id="Servlet_9">
+		<servlet-name>getEditionDet</servlet-name>
+		<servlet-class>com.distapp.beans.getEditionDet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>jersey-serlvet</servlet-name>
+		<servlet-class>
+			com.sun.jersey.spi.container.servlet.ServletContainer
+		</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>com.kryptos.npp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping id="ServletMapping_1">
+		<servlet-name>log4j-init</servlet-name>
+		<url-pattern>/log4j-init</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping id="ServletMapping_4">
+		<servlet-name>getPicklistDesc</servlet-name>
+		<url-pattern>/getPicklistDesc</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping id="ServletMapping_5">
+		<servlet-name>getQueryResults</servlet-name>
+		<url-pattern>/getQueryResults</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="ServletMapping_8">
+		<servlet-name>getDBDetails</servlet-name>
+		<url-pattern>/getDBDetails</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping id="ServletMapping_9">
+		<servlet-name>getEditionDet</servlet-name>
+		<url-pattern>/getEditionDet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ActionServlet</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping id="ServletMapping_3">
+		<servlet-name>securityChk_Servlet</servlet-name>
+		<url-pattern>/securityChk_Servlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping id="ServletMapping_6">
+		<servlet-name>upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>jersey-serlvet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+
+	<mime-mapping>
+		<extension>Z</extension>
+		<mime-type>application/zip</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>ZIP</extension>
+		<mime-type>application/zip</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>xls</extension>
+		<mime-type>application/vnd.ms-excel</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>xls</extension>
+		<mime-type>application/octet-stream</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>csv</extension>
+		<mime-type>application/vnd.ms-excel</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>htm</extension>
+		<mime-type>text/html</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>txt</extension>
+		<mime-type>text/plain</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>doc</extension>
+		<mime-type>application/vnd.ms-winword</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>gz</extension>
+		<mime-type>application/x-gzip</mime-type>
+	</mime-mapping>
+
+	<welcome-file-list>
+		<welcome-file>npp/index.html</welcome-file>
+	</welcome-file-list>
+	<resource-ref>
+		<description>Connection Pool</description>
+		<res-ref-name>jdbc/AgapsDS</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+
+</web-app>

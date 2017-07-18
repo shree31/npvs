@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_0.dtd">
+
+
+<struts-config>
+	<!-- ========== Global Forward Definitions ============================== -->
+	<global-forwards>
+
+		<forward name="MT_COMPANY" 	path="/MT_COMPANY.jsp"/> 
+		<forward name="MT_DIST_ENTRY" 	path="/MT_DISTENTRY.jsp"/> 
+		<forward name="MT_CENTER" 	path="/MT_CENTER.jsp"/> 
+		<forward name="MT_PUBLICATION" 	path="/MT_PUBLICATION.jsp"/> 
+		<forward name="MT_EDITION" 	path="/MT_EDITION.jsp"/> 
+		<forward name="MT_HOLIDAY" 	path="/MT_HOLIDAY.jsp"/> 
+		<forward name="MT_REGION" 	path="/MT_REGION.jsp"/> 
+		<forward name="MT_DELIVERY" 	path="/MT_DELIVERY.jsp"/> 
+		<forward name="MT_AREA" 	path="/MT_AREA.jsp"/> 
+		<forward name="MT_EXECUTIVE" 	path="/MT_EXECUTIVE.jsp"/> 
+		<forward name="MT_ROUTE" 	path="/MT_ROUTE.jsp"/> 
+		<forward name="MT_RATE" 	path="/MT_RATE.jsp"/> 
+		<forward name="MT_SUPCHRGADD" 	path="/MT_SUPCHRGADD.jsp"/> 
+		<forward name="MT_AGN_PAPER_STOP" 	path="/MT_BASESUPSEARCHVEWOFF.jsp"/> 
+		<forward name="MT_PURRATE" 	path="/MT_PURRATE.jsp"/> 
+		<forward name="MT_PURRATEVIEW" 	path="/MT_PURRATEVIEW.jsp"/> 
+		<forward name="RATE_PURPOP" 	path="/MT_PURRATE.jsp"/> 
+		<forward name="RATE_PURPOPVEW" 	path="/MT_PURRATEVIEW.jsp"/> 
+		<forward name="RATE_POP" 	path="/MT_RATE.jsp"/> 
+		<forward name="RATE_SUPPOP" 	path="/MT_SUPCHRGADD.jsp"/> 
+		<forward name="RATE_SUPVEW" 	path="/MT_SUPCHRGVEW.jsp"/> 
+		<forward name="RATE_POPVEW" 	path="/MT_RATEVIEW.jsp"/> 
+		<forward name="MT_COMMISSION" 	path="/MT_COMMISSION.jsp"/> 
+		<forward name="MT_CATEGORY" 	path="/MT_CATEGORY.jsp"/> 
+		<forward name="MT_AGENCY" 	path="/MT_AGENCY.jsp"/> 
+		<forward name="MT_COMPANYVIEW" 	path="/MT_COMPANYVIEW.jsp"/> 
+		<forward name="MT_BASESUPSEARCHCALMOD" 	path="/MT_BASESUPSEARCHCALMOD.jsp"/> 
+		<forward name="MT_BASESUPSEARCHCAL" 	path="/MT_BASESUPSEARCHCALMOD.jsp"/> 
+		<forward name="TR_PAY_DETAILSSEARCH" 	path="/TR_PAY_DETAILSSEARCH.jsp"/> 
+		<forward name="TR_DAILY_UNSOLDRESULTS" 	path="/TR_DAILY_UNSOLDVIEW.jsp"/> 
+		<forward name="MT_CENTERVIEW" 	path="/MT_CENTERVIEW.jsp"/> 
+		<forward name="MT_PUBLICATIONVIEW" 	path="/MT_PUBLICATIONVIEW.jsp"/> 
+		<forward name="MT_EDITIONVIEW" 	path="/MT_EDITIONVIEW.jsp"/> 
+		<forward name="MT_HOLIDAYVIEW" 	path="/MT_HOLIDAYVIEW.jsp"/> 
+		<forward name="MT_REGIONVIEW" 	path="/MT_REGIONVIEW.jsp"/> 
+		<forward name="MT_DELIVERYVIEW" 	path="/MT_DELIVERYVIEW.jsp"/> 
+		<forward name="MT_AREAVIEW" 	path="/MT_AREAVIEW.jsp"/> 
+		<forward name="MT_EXECUTIVEVIEW" 	path="/MT_EXECUTIVEVIEW.jsp"/> 
+		<forward name="MT_ROUTEVIEW" 	path="/MT_ROUTEVIEW.jsp"/> 
+		<forward name="MT_RATEVIEW" 	path="/MT_RATEVIEW.jsp"/> 
+		<forward name="MT_SUPCHRGVEW" 	path="/MT_SUPCHRGVEW.jsp"/> 
+		<forward name="MT_COMMISSIONVIEW" 	path="/MT_COMMISSIONVIEW.jsp"/> 
+		<forward name="MT_CATEGORYVIEW" 	path="/MT_CATEGORYVIEW.jsp"/> 
+		<forward name="MT_AGENCYVIEW" 	path="/MT_AGENCYVIEW.jsp"/> 
+		<forward name="NOT_VALID_SESSION" 	path="/SessionExpire.jsp"/> 
+		<forward name="Picklist" 	path="/Picklist.jsp"/> 
+		<forward name="MT_AGENCYSUPPLY" 	path="/MT_AGENCYSUPPLY.jsp"/> 
+		<forward name="MT_AGENCYSUPPLYMODALL" 	path="/MT_AGENCYSUPPLYMODALL.jsp"/> 
+		<forward name="MT_AGENCYSUPPLYMOD" 	path="/MT_AGENCYSUPPLYMOD.jsp"/> 
+		<forward name="MT_AGNSEARCHRESULTS" 	path="/MT_AGENCYSUPPLYMOD.jsp"/> 
+		<forward name="TR_DAILYPOST" 	path="/TR_DAILYPOST.jsp"/> 
+		<forward name="TR_PAY_DETAILS" 	path="/TR_PAY_DETAILS.jsp"/> 
+		<forward name="TR_PAY_DETAILSRESULTS" 	path="/TR_PAY_DETAILSVIEW.jsp"/> 
+		<forward name="TR_PAY_DETAILSVIEW" 	path="/TR_PAY_DETAILSVIEW.jsp"/> 
+		<forward name="TR_DAILY_UNSOLD" 	path="/TR_DAILY_UNSOLD.jsp"/> 
+		<forward name="TR_DAILY_UNSOLDVIEW" 	path="/TR_DAILY_UNSOLDVIEW.jsp"/> 
+		<forward name="RPT_LINK" 	path="/REPORT_LINK_DISPLAY.jsp"/> 
+		<forward name="REPORT_LINK_DISPLAY" 	path="/REPORT_LINK_DISPLAY.jsp"/> 
+		<forward name="TR_BILL" 	path="/TR_BILL.jsp"/>
+		<forward name="TR_BILL_EMAIL" 	path="/TR_BILL_EMAIL.jsp"/> 
+		<forward name="TR_BILL_RESET" 	path="/TR_BILL_RESET.jsp"/> 
+		<forward name="TR_DAILY_BILL" 	path="/TR_DAILY_BILL.jsp"/> 
+		<forward name="MT_USERCRN" 	path="/MT_USRCRN.jsp"/> 
+		<forward name="MT_USERCRNVIEW" 	path="/MT_USERCRNVIEW.jsp"/> 
+		<forward name="TR_DAILY_UNSOLDSEARCH" 	path="/TR_DAILY_UNSOLDSEARCH.jsp"/>
+	<!--SUBSCRIPTION -->
+		<forward name="MT_SUBPERSONALDET" 	path="/MT_SUBPERSONALDET.jsp"/> 
+		<forward name="MT_SUBPERSONALDETVIEW" 	path="/MT_SUBPERSONALDETVIEW.jsp"/> 
+		<forward name="MT_SUBOFFERDET" 	path="/MT_SUBOFFERDET.jsp"/> 
+		<forward name="MT_SUBOFFERDETVIEW" 	path="/MT_SUBOFFERDETVIEW.jsp"/> 
+		<forward name="MT_SUPP" 	path="/MT_SUPP.jsp"/> 
+		<forward name="MT_SUPPVIEW" 	path="/MT_SUPPVIEW.jsp"/> 
+		<forward name="MT_CATEGORY" 	path="/MT_CATEGORY.jsp"/> 
+		<forward name="MT_CATEGORYVIEW" 	path="/MT_CATEGORYVIEW.jsp"/> 
+		<forward name="MT_PAGEMST" 	path="/MT_PAGEMST.jsp"/> 
+		<forward name="MT_PAGEMSTVIEW" 	path="/MT_PAGEMSTVIEW.jsp"/> 
+ 		<forward name="MT_WKLYAGNSUP" 	path="/MT_WKLYAGNSUP.jsp"/> 
+ 		<forward name="MT_CUSTPAYMENT" 	path="/MT_CUSTPAYMENT.jsp"/>
+ 		<forward name="MT_COUPONDETAILS" 	path="/MT_COUPONADD.jsp"/>
+ 		<forward name="MT_MULTI_CUSTPYMT" 	path="/MT_MULTI_CUSTPYMT.jsp"/>
+ 		
+ 		</global-forwards>
+
+	<!-- ========== Action Mapping Definitions ============================== -->
+<action-mappings>
+
+		<action path="/distAppCommonActionServlet"		type="com.distapp.beans.distAppCommonActionServlet" />
+		<action path="/distAppCommonPicklistSearch"		type="com.distapp.beans.distAppCommonPicklistSearch" />
+		<action path="/rptLabelActionServlet"					type="com.distapp.beans.rptLabelActionServlet" />
+		<action path="/reortGenToolActionServlet"					type="com.distapp.beans.reortGenToolActionServlet" />
+</action-mappings>
+
+ </struts-config>

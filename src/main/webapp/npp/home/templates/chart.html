@@ -1,0 +1,36 @@
+<div class="mdl-card npp-card-center mdl-shadow--2dp">
+	<div class="mdl-card__title mdl-color--cyan-600">
+		<div
+			class="mdl-card__title-text  mdl-color-text--white mdl-typography--display-1">Yearly
+			Bill Trend</div>
+	</div>
+	<div class="mdl-card__actions mdl-color-text--white">
+		<div class="mdl-card__actions">
+			<canvas id="bar" class="chart chart-bar" chart-data="data"
+				chart-labels="labels" click="getChartData"> chart-series="series"
+		</canvas>
+		</div>
+		<div class="mdl-color--cyan-600">
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--8-col">
+					<label class="mdl-label">Total Charges</label>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col">
+					<label class="mdl-label">&#x20B9 {{bill.lastOutAmt}}</label>
+				</div>
+				<div class="mdl-cell mdl-cell--8-col">
+					<label class="mdl-label">Balance Payable</label>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col">
+					<label class="mdl-label">&#x20B9 {{bill.outAmt}}</label>
+				</div>
+				<div class="mdl-cell mdl-cell--8-col">
+					<label class="mdl-label">Total Payable</label>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col">
+					<label class="mdl-label">&#x20B9 {{bill.totalAmt}}</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

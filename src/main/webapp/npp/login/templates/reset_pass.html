@@ -1,0 +1,31 @@
+<div class="npp-card-center mdl-card mdl-shadow--6dp">
+	<div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+		<h2 class="mdl-card__title-text">Reset Password</h2>
+	</div>
+	<div class="mdl-textfield mdl-color-text--red">
+				{{error}}
+			</div>
+	<div class="mdl-card__supporting-text">
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<input class="mdl-textfield__input" type="password" id="newPass" ng-model="user.oldPass"/>
+			<label class="mdl-textfield__label" for="newPass">Existing Password</label>
+		</div>
+	</div>
+ 		<div class="mdl-card__supporting-text">
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<input class="mdl-textfield__input" type="password" id="newPass" ng-model="user.newPass"/>
+			<label class="mdl-textfield__label" for="newPass">New Password</label>
+		</div>
+	</div>
+	<div class="mdl-card__supporting-text">
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<input class="mdl-textfield__input" type="password" id="newPassCnf" ng-model="user.newPassCnf"/>
+			<label class="mdl-textfield__label" for="newPass">Confirm New Password</label>
+		</div>
+	</div>
+	<div class="mdl-card__actions">
+		<button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="resetPass()">Reset</button>
+		<button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ui-sref="home">Cancel</button>
+	</div>
+</div>
+	

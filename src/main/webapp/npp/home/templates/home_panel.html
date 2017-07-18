@@ -1,0 +1,16 @@
+<div ui-view="header"></div>
+<div ui-view="content" class="mdl-grid mdl-layout--center">
+	<div class="mdl-cell mdl-cell--2-col">
+	</div>
+	<div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet">
+		<ui-view name="pendingBill"></ui-view>
+	</div>
+	<div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet">
+		<ui-view name="chart"></ui-view>
+	</div>
+	<div class="mdl-cell mdl-cell--2-col">
+	</div>
+	<div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet">
+		<ui-view name="paper"></ui-view>
+	</div>
+</div>

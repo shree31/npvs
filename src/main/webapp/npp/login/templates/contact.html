@@ -1,0 +1,96 @@
+<div class="mdl-layout">
+   <div class="mdl-layout-spacer"></div>
+	<div class="mdl-card npp-card-medium mdl-shadow--6dp">
+		<div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+			<h2 class="mdl-card__title-text">Contact Form</h2>
+		</div>
+		<div class="mdl-card__supporting-text">
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="name" ng-model="user.name"/>
+					<label class="mdl-textfield__label" for="name">Name</label>
+				</div>
+				<div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="emailid" ng-model="user.email"/>
+					<label class="mdl-textfield__label" for="emailid">Email id</label>
+				</div>
+				<div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield">
+					<textarea class="mdl-textfield__input" type="text" rows= "3" id="user.msg" ng-model="user.msg"></textarea>
+					<label class="mdl-textfield__label" for="msg">Message...</label>
+				</div>
+			</div>
+		</div>
+		<div class="mdl-card__actions mdl-card--border">
+			<button
+				class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+				data-text="Submit" type="submit">SEND</button>
+		</div>
+	</div>
+	
+	
+	<footer class="mdl-mini-footer mdl-color--blue-600">
+		<div class="mdl-mini-footer__left-section">
+			<h5 class="mdl-mega-footer__heading android-screen">Location</h5>
+			<div class="mdl-mini-footer__right-section">
+				<strong class="mdl-mega-footer__heading"> <i
+					class="material-icons md-18">room</i>
+				</strong>
+			</div>
+			<div class="mdl-mini-footer__right-section">
+				<address>
+					<strong class="mdl-mega-footer__heading">53,Shubh Commercial Complex,<br/>
+					Akurli Road,Opp. ESIS Hospital,<br/>
+					Kandivali(E),Mumbai-400101
+					</strong>
+				</address>
+			</div>
+		</div>
+		<div class="mdl-mini-footer__middle-section">
+			<h5 class="mdl-mega-footer__heading android-screen">Social
+				Circle</h5>
+
+			<div class="mdl-mini-footer__right-section">
+				<button
+					class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-mini-footer__social-btn mdl-color--white">
+					<a href="#" target="_blank" ><i class="fa fa-google-plus"></i></a>
+				</button>
+				<button
+					class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-mini-footer__social-btn mdl-color--white">
+					<a href="#" target="_blank" ><i class="fa fa-facebook"></i></a>
+				</button>
+				<button
+					class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-mini-footer__social-btn mdl-color--white">
+					<a href="#" target="_blank" ><i class="fa fa-twitter"></i></a>
+				</button>
+				<button
+					class=" mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-mini-footer__social-btn mdl-color--white">
+					<a href="#" target="_blank" ><i class="fa fa-vine"></i></a>
+				</button>
+			</div>
+		</div>
+
+		<div class="mdl-mini-footer__right-section">
+			<div class="mdl-mini-footer__drop-down-section">
+				<h1 class="mdl-mega-footer__heading android-screen">Contact</h1>
+				<div class="mdl-mini-footer__left-section">
+					<strong class="mdl-mega-footer__heading"> <i
+						class="material-icons md-18">smartphone</i></strong>
+				</div>
+				<div class="mdl-mini-footer__right-section">
+					<p>
+						<strong class="mdl-mega-footer__heading"> +91 9892008805<br> +91 22 40169041
+						</strong>
+					</p>
+				</div>
+				<br> <strong class="mdl-mega-footer__heading"> <i
+					class="material-icons md-18">email</i></strong>
+				<div class="mdl-mini-footer__right-section">
+					<p>
+						<strong class="mdl-mega-footer__heading">
+							Kryptossoftware.com </strong>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>

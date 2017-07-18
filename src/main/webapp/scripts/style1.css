@@ -1,0 +1,226 @@
+TEXTAREA
+{
+    TEXT-TRANSFORM: uppercase
+}
+INPUT
+{
+    TEXT-TRANSFORM: uppercase
+}
+.linkgrey { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #05132d; text-decoration: underline }
+
+.justify {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #000000; text-align: justify}
+
+.heading {  font-family: Arial, Helvetica, sans-serif; text-align:center; font-size: 14pt; font-weight: bold; color: rgb(200, 151, 33);;}
+
+
+td{font-family:Arial, Helvetica, sans-serif; font-size:9pt; color:000000;}
+
+th{font-family:MS Sans Serif,Arial; font-size:9pt; color:ffffff; background:#a3a3a3; font-weight:bold;}
+
+/*.ste{background:#e8eff9;; color: #000090; font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: normal; text-decoration: none}*/
+
+.ste{background:########;;color: ########; font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; text-decoration: none}
+
+.str{background:#C0C0C0;}
+
+.st3{background:########; color: #000090; font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: bold; text-decoration: none}
+
+.st4{background:#e8eff9; color: #000090; font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: bold; text-decoration: none text-align: center}
+
+.st5{background:#CC0000;; color: #FFFFFF}
+
+.userlabel{font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #626262;font-weight:bold }
+
+.linkblue{font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: blue; text-decoration: underline}
+
+.nonlinkblue{font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #0000ff; text-decoration: none;}
+
+.institaclic{font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #000090; font-style: italic; font-weight:bold}
+
+.instreditalic{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #FF0000; font-style: italic }
+
+.titlehead{background-color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: normal}
+
+.smallfont{font-family: Arial, Helvetica, sans-serif; font-size: 8pt}
+
+.redbold{font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #FF0000; text-decoration: none ; font-weight: bold}
+
+.bluebold{font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #0000ff; font-weight: bold}
+
+.input {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #333333}
+.marathi_script{  font-family: 4CGandhi, 4CGandhi, sans-serif; font-size: 11pt; font-weight: normal; color: #333333}
+
+.readonlyinput {  font-family: Arial, Helvetica; font-size: 8pt; font-weight: normal; background: #D3D3D3}
+
+/* To seperate groups of controls a image with this style is used. */
+.seperatorline{
+width:1;
+height:3;
+}
+
+.mainbody{
+background-color:#FFFFFF;
+color:#000000;
+margin:0;
+background:url("../images/form-bg-img.jpg");
+}
+
+.formtable{
+ width:100%;
+ border:0;
+ }
+ 
+.detailstable{
+ width:100%;
+ background :100% url("../images/form-bg-img.jpg") 0 0 no-repeat;
+ border: 5px inset rgb(200, 151, 33); padding: 3px;
+ margin-left:100px
+ margin-right:100px
+ }
+
+.headercol2{
+ width:100%;
+}
+
+.headercol1{
+ width:100%;
+ height:23;
+}
+
+.eventstable{
+ width:100%;
+ border:0;
+ }
+
+
+.eventsrow1{}
+
+.eventscol{
+height:20;
+}
+
+.eventsrow2{}
+
+.eventimg{
+width:18;
+height:13;
+}
+
+.formcol
+{
+vertical-align:top;
+}
+
+.calendarctr
+{
+width:16;
+height:16;
+}
+
+.formcontrollabel
+{
+}
+
+.MT_PUBLICATION_div
+{
+position:relative;
+left:20%;
+}
+
+.button {  
+  color: #111111;   
+  font: bold 84%'trebuchet ms',helvetica,sans-serif;   
+  background-color: #A8A8A8; 
+  border:1px solid;   
+  border-color: #B87333; 
+   filter:progid:DXImageTransform.Microsoft.Gradient   
+   (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#ffeeddaa');   
+  font-size : 9pt;
+  }
+
+ .button.mouseover {   
+   border:5px solid;  
+  }
+
+.MenuTable
+{
+}
+.MenuHeader
+{
+  background : url("../images/button2.gif") 0 0 no-repeat;
+	height : 10px;
+	width : 160px;
+   text-indent : 20px;
+   color : Red;
+
+ }
+
+.MenuHeader a
+{
+text-decoration: none;
+height : 25px;
+width : 30px
+}
+
+.MenuHeader a:hover
+{	
+	font-size: 10pt; color: #FFCCFF; font-style: italic; font-weight:bold;
+}
+
+
+.MenuOption
+{
+position: relative;
+left : 20%;
+display:block;
+height : 10px; 
+text-indent : 20px;
+text-decoration: none;
+color:#102300;
+}
+
+.MenuOption a
+{
+	color:#000000;
+}
+
+.leftlinkheader a:hover {display : block; border-bottom: 1px solid #cc0000;  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #FFA200; font-weight: bold;text-decoration: none}
+
+.MenuOption A:hover
+{
+display : block;
+border: 1px solid #cc0000;
+}
+
+.sidepre
+{
+		background:#856669;
+}
+.side
+{
+	display:block;
+	position:fixed;
+	background:#C89B21;
+	background:#857873;
+	height:30px;
+	width:80px;
+}
+
+.sub a
+{
+	text-indent:40px;
+	text-decoration:none;
+	color:#ffffff;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.sub a:hover
+{
+	display:block;
+	background:#af9a99;
+	border-bottom:1px solid #000000;
+	border-right:1px solid #000000;
+	border-left:1px solid #ffffff;
+	border-top:1px solid #ffffff;
+}

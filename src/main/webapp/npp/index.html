@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="npp">
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>News Paper Portal</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+	
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+  </head>
+
+  <body>
+    <div ui-view></div>
+	<link rel="stylesheet" href="npp/style/material.min.css" /> 
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="npp/style/npp.css?v=3" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="npp/style/fontcss.css"/>
+    <link rel="stylesheet" href="npp/style/mdl_icon.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
+    <script src="https://code.angularjs.org/1.4.2/angular-animate.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.2/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+
+	<!-- Angular UI routing -->
+	<script src="npp/js/lib/angular-ui-router.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.min.js"></script>
+
+	
+	<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+    
+	<!-- Libraries for Chart -->
+	<script src="npp/js/lib/Chart.js"></script>
+	<script src="npp/js/lib/angular-chart.js"></script>
+	<!-- Application Libraries -->
+	<script src="npp/js/npp.js?v=3"></script>
+	<script src="npp/login/controllers/LoginCtrl.js"></script>
+	<script src="npp/login/services/LoginService.js"></script>
+	<script src="npp/home/controllers/ChartCtrl.js"></script>
+	<script src="npp/home/services/HomeService.js"></script>
+	<script src="npp/home/controllers/ProfileCtrl.js"></script>
+	<script src="npp/home/controllers/HomeCtrl.js"></script>
+	<script src="npp/home/controllers/PaperCtrl.js"></script>
+	<script src="npp/home/controllers/PendingBillCtrl.js"></script>
+    <script src="npp/home/controllers/IntroCtrl.js"></script>
+	<!-- Date Picker -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
+</body>
+
+</html>

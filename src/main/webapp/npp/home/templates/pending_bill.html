@@ -1,0 +1,36 @@
+<div class="mdl-card npp-card-center mdl-shadow--2dp mdl-color--cyan-600">
+  <div class="mdl-card__title">
+    <div class="mdl-card__title-text  mdl-color-text--white mdl-typography--display-1">Pending Bill</div>
+  </div>
+  <div class="mdl-card__supporting-text mdl-color-text--white">
+		<div class="mdl-card__supporting-text npp-card-center">
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--8-col">
+					<label class="mdl-label">Total Charges</label>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col">
+					<label class="mdl-label">&#x20B9{{bill.lastOutAmt}}</label>
+				</div>
+				<div class="mdl-cell mdl-cell--8-col">
+					<label class="mdl-label">Balance Payable</label>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col">
+					<label class="mdl-label">&#x20B9{{bill.outAmt}}</label>
+				</div>
+				<div class="mdl-cell mdl-cell--8-col">
+					<label class="mdl-label">Total Payable</label>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col">
+					<label class="mdl-label">&#x20B9{{bill.totalAmt}}</label>
+				</div>
+			</div>
+		</div>
+	</div>
+  <div class="mdl-card__actions">
+    <div class="mdl-layout-spacer"></div>
+	<button class="npp-button-right mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect" ng-click="viewBillDetails()">View Details</button>
+  	<div class="mdl-layout-spacer"></div>
+	<button class="npp-button-right mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">Pay Now</button>
+  </div>
+  
+</div>
